@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>Converter</title></head>
+
+<body>
+    <h1><center>Conversion<br />
+    <select id="main" onchange="mainConvert(); calc()">
+    <option>length</option>
+    <option>weight</option>
+    <option>time</option>
+    <option>area</option>
+    <option>velocity</option>
+    <option>coolingload</option>
+    </select>
+    </center></h1>
+
+    
+    <center>
+    From
+    <select id="selectFrom" onchange="calc()">
+    </select>
+    
+    
+    <input id="input" type="text" oninput="calc()">
+    
+    To
+    <select id="selectTo" onchange="calc()">
+    </select> 
+    
+    <br /><br />
+    <h4><div id="value"></div></h4>
+    
+    </center>
+
+
+
+
+
+
+<script src="convert.js"></script>
+
+</body>
+</html>
