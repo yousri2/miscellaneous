@@ -16,16 +16,16 @@
 
     
     <center>
-    From
+    
+    <label>From</label>
     <select id="selectFrom" onchange="calc()">
     </select>
-    
-    
-    <input id="input" type="text" onkeyup="this.value=this.value.replace(/[^0-9 .]/,'')" oninput="calc()">
-    
-    To
+    <label>To</label>
     <select id="selectTo" onchange="calc()">
-    </select> 
+    </select><br>
+        
+    <input id="input" type="text" onkeyup="check()">
+    <input type="button" id="btn" value="calculate" onclick="calc()">
     
     <br /><br />
     <h4><div id="value"></div></h4>

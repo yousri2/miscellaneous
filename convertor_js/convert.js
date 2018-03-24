@@ -1,6 +1,21 @@
 /*jslint plusplus: true */
 /*global console*/
 
+var input = document.getElementById("input");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("btn").click();
+    }
+});
+
+
+function check() {
+    "use strict";
+    document.getElementById("input").value=document.getElementById("input").value.replace(/[^0-9 .]/,'');
+   
+}
+
 //arrays
 var length = ["meter", "cm", "mm", "inch", "feet", "kilometer", "yard", "mile", "hand"],
     weight = ["kilogram", "gram", "ton", "pound"],
@@ -87,6 +102,7 @@ function calc() {
         b = 0,
         a = document.getElementById("selectTo").value,
         c = document.getElementById("main").value;
+    
     
     document.getElementById("value").innerHTML = "";
     //Length Equations
