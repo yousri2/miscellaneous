@@ -23,6 +23,7 @@ function exec() {
         o = "",
         b1 = "",
         data = document.getElementById("data").value;
+    data = Math.ceil(data);
     for (i = 0; i <= 12; i++) {
         b1 += data % 2;
         data = Math.floor(data / 2);

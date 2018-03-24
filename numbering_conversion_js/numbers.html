@@ -6,7 +6,7 @@
 <body>
 <div>Convert from Decimal to binary</div>
 <form>
-    <input type="number" name="data" id="data" oninput="exec()"/>
+    <input type="number" name="data" id="data" onkeyup="this.value=this.value.replace(/[^\d]/,'')" oninput="exec()">
 </form>
     
  <div id ="out"></div>   

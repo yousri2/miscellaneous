@@ -21,7 +21,7 @@
     </select>
     
     
-    <input id="input" type="text" oninput="calc()">
+    <input id="input" type="text" onkeyup="this.value=this.value.replace(/[^0-9 .]/,'')" oninput="calc()">
     
     To
     <select id="selectTo" onchange="calc()">
